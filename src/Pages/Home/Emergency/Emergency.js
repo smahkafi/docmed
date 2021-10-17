@@ -1,12 +1,26 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import {Button, Container} from 'react-bootstrap';
 
 const Emergency = () => {
     return (
         <div className="bg-info"> 
             <Container>
-                <div>
-                
+                <div className="row m-5">
+                    <div className="col-sm-12 col-md-6 col-lg-4 px-3">
+                            <h2 className="text-white">his is sodfsdo</h2>
+                            <p className="text-white">lorem a sdkfosdajfosadf sadf sda fosdfohsdaofu sda fsadh fo sad fosad fosdaf </p>
+                            <Button className="rounded-2 bg-dark">Apply For A Bed</Button>
+                    </div>
+                    <div className="col-sm-12 col-md-6 col-lg-4 bg-primary px-3">
+                            <h2 className="text-white">his is sodfsdo</h2>
+                            <p className="text-white">lorem a sdkfosdajfosadf sadf sda fosdfohsdaofu sda fsadh fo sad fosad fosdaf </p>
+                            <Button className="rounded-2 bg-dark">+10 672 356 3567</Button>
+                    </div>
+                    <div className="col-sm-12 col-md-6 col-lg-4 px-3">
+                            <h2 className="text-white">his is sodfsdo</h2>
+                            <p className="text-white">lorem a sdkfosdajfosadf sadf sda fosdfohsdaofu sda fsadh fo sad fosad fosdaf </p>
+                            <Button className="rounded-2 bg-dark">Make An Appointment</Button>
+                    </div>
                 </div>
             </Container>
         </div>
