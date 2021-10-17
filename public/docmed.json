@@ -1,0 +1,38 @@
+[
+    {
+    "id": 1,
+    "image":"https://focused-galileo-2cc77f.netlify.app/img/eye.webp",
+    "name": "Eye Care",
+    "description": "We’re a team of energetic, young professionals that share a love for dogs, beaches, sunshine, and digital marketing."
+    },
+    {
+    "id": 2,
+    "image":"https://focused-galileo-2cc77f.netlify.app/img/Physical%20Therapy.webp",
+    "name": "Physical Therapy",
+    "description": "We offer personalized rehabilitation treatment with hands-on physical therapy. Plus, we'll schedule your first appointment in 24-48 hours, so you'll start feeling better fast."
+    },
+    {
+    "id": 3,
+    "image":"https://preview.colorlib.com/theme/docmed/img/department/x3.png.pagespeed.ic.zpAN733a8c.webp",
+    "name": "Dental Care",
+    "description": "The NHS will provide any clinically necessary treatment needed to keep your mouth, teeth and gums healthy and free of pain. Decisions about which treatment is appropriate will be based on a clinical assessment and clinical judgement."
+    },
+    {
+    "id": 4,
+    "image":"https://focused-galileo-2cc77f.netlify.app/img/Diagnostic%20Test.webp",
+    "name": "Diagnostic Test",
+    "description": "A type of test used to help diagnose a disease or condition. Mammograms and colonoscopies are examples of diagnostic tests. Also called diagnostic procedure."
+    },
+    {
+    "id": 5,
+    "image":"https://focused-galileo-2cc77f.netlify.app/img/Skin%20Surgery.webp",
+    "name": "Skin Surgery",
+    "description": "DermNet NZ has become a world-renowned resource all about the skin. The website is owned by the DermNet New Zealand Trust. It is frequently updated to provide information about the skin via any desktop or mobile web browser."
+    },
+    {
+    "id": 6,
+    "image":"https://focused-galileo-2cc77f.netlify.app/img/Surgery%20Service.webp",
+    "name": "Surgery Service",
+    "description": "If you or a loved one needs surgery, our surgeons and their teams provide expert, compassionate care. From same-day outpatient surgery to total joint replacement and open heart surgery, Blessing provid es a broad array of surgical services."
+    }
+]
