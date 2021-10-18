@@ -13,13 +13,16 @@ const Footer = () => {
                     <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border">
                         <div>
                             <img src={`https://preview.colorlib.com/theme/docmed/img/xfooter_logo.png.pagespeed.ic.xG_fu5FTHW.webp`} alt="icon"/>
-                            <span>Docmed</span>
+                            <p className="text-light">Firmament morning sixth subdue darkness creeping gathered divide.</p>
                         </div>
                         <div>
-                            <p>Firmament morning sixth subdue darkness creeping gathered divide.</p>
-                            <Link to="https://www.facebook.com"><FontAwesomeIcon className="icon" icon={faTwitterSquare}/></Link>
-                            <FontAwesomeIcon className="icon" icon={faFacebookSquare}/>
-                            <FontAwesomeIcon className="icon" icon={faYoutubeSquare}/>
+                            <Link to="https://www.facebook.com">
+                                <FontAwesomeIcon className="icon" icon={faTwitterSquare}/></Link>
+                            <Link>
+                                <FontAwesomeIcon className="icon" icon={faFacebookSquare}/></Link>
+                            <Link>
+                                <FontAwesomeIcon className="icon" icon={faYoutubeSquare}/>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border">
@@ -37,7 +40,7 @@ const Footer = () => {
                     </div>
                 </div>
             </Container>
-            <div className="bg-light py-5">
+            <div className="bg-light py-2">
                 <h6 className="text-warning">Copyright &copy; 2021 All rights reserved</h6>
             </div>
         </div>

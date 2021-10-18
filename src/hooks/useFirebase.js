@@ -1,5 +1,5 @@
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendPasswordResetEmail, signInWithEmailAndPassword,  signInWithPopup, sendEmailVerification, signOut, onAuthStateChanged, GoogleAuthProvider, getAuth} from "firebase/auth";
 import { useEffect, useState } from "react";
 
 initializeAuthentication();
@@ -56,6 +56,32 @@ const useFirebase = () => {
             })
     }
 
+    const handleRegistration = (e) => {
+        e.preventDefault();
+        if (password.length < 8) {
+            console.log('Password must be at least 8 characters')
+            return;
+        }
+        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
+            console.log("Password must contain 2 uppercase")
+            return;
+        }
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                setUser(result.user);
+                verifyEmail(email);
+                setError("");
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+    const verifyEmail = (email) => {
+        sendEmailVerification(auth.email)
+            .then(result => { })
+    }
+
     useEffect(() => {
         const unsubscribed = onAuthStateChanged(auth, user => {
             if (user) {
@@ -81,8 +107,8 @@ const useFirebase = () => {
         handleEmailChange,
         handlePasswordChange,
         handleResetPassword,
+        handleRegistration,
         logOut
-
     }
 }
 
