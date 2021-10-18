@@ -3,7 +3,7 @@ import AboutBanner from './AboutBanner/AboutBanner';
 
 const About = () => {
     return (
-        <div>
+        <div id="about">
             <AboutBanner></AboutBanner>
         </div>
     );

@@ -7,6 +7,10 @@ import Footer from './Pages/Shared/Footer/Footer';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import AuthProvider from './Context/AuthProvider';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Services from './Pages/Services/Services';
+import Login from './Pages/Login/Login/Login';
+import { NotFound } from 'http-errors';
 
 
 function App() {
@@ -27,6 +31,15 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contact></Contact>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/services/:servicesId">
+              <Services></Services>
+            </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

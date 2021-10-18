@@ -1,16 +1,32 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <Link className="m-2 link-text" to="/home">Home</Link>
-            <Link className="m-2 link-text" to="/about">About Us</Link>
-            <Link className="m-2 link-text" to="/services">Services</Link>
-            <Link className="m-2 link-text" to="/contact">Contact</Link>
-            <Link className="m-2 link-text" to="/login">Log In</Link>
-        </div>
+        <>
+            <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+                <Container>
+                    <Navbar.Brand href="#home">Docmed</Navbar.Brand>
+
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-end">
+                        <Nav.Link as={HashLink} className="" to="/home#home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} className="" to="/about">About Us</Nav.Link>
+                        <Nav.Link as={HashLink} className="" to="/home#services">Services</Nav.Link>
+                        <Nav.Link as={HashLink} className="" to="/contact">Contact</Nav.Link>
+
+                        {/*  <Button onClick={logOut} variant="outline-primary">Log out</Button> 
+                            <Nav.Link as={Link} to="/login">Login</Nav.Link> */}
+
+                        <Navbar.Text>
+                        <Nav.Link to="/login#login">fgh</Nav.Link>
+                        </Navbar.Text>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </>
     );
 };
 

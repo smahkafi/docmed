@@ -6,7 +6,7 @@ import Map from './Map/Map';
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <div id="contact" className="contact">
             <ContactBanner></ContactBanner>
             <Map></Map>
             <GetTouch></GetTouch>

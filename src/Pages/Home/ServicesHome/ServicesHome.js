@@ -11,13 +11,13 @@ const ServicesHome = () => {
         .then(data => setServicesHomes(data))
     },[])
     return (
-        <div className="bg-light m-0">
+        <div className="bg-light mt-5">
             <Container>
-                <div className="mt-5">
+                <div className="mt-4 text-center">
                     <h2>Our Departments</h2>
-                    <p className="">Esteem spirit temper too say adieus who direct esteem.It esteems luckily or picture placing drawing.</p>
+                    <p>Esteem spirit temper too say adieus who direct esteem. <br/> It esteems luckily or picture placing drawing.</p>
                 </div>
-                <div className="row d-flex ">
+                <div className="row d-flex mt-5">
                     {
                         servicesHomes.map(service=> <ServiceHome key={service.id} service={service}></ServiceHome>)
                     }
