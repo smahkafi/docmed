@@ -30,6 +30,7 @@ const Header = () => {
                             <Navbar.Text>
                                 <Nav.Link to="/login#login"> {user?.displayName} </Nav.Link>
                             </Navbar.Text>
+                            
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

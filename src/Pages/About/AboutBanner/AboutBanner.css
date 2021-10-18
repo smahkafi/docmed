@@ -6,3 +6,6 @@
 .about-title{
     margin: 0px auto ;
 }
+.about-title{
+    align-self: center !important;
+}
