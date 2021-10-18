@@ -1,0 +1,44 @@
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+// import { faFacebookSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
+
+const Footer = () => {
+    return (
+        <div>
+            <Container className="mt-5">
+                <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border border-success">
+                        <div>
+                            <img src={`https://preview.colorlib.com/theme/docmed/img/xfooter_logo.png.pagespeed.ic.xG_fu5FTHW.webp`} alt="icon"/>
+                            <span>Docmed</span>
+                        </div>
+                        <div>
+                            <p>Firmament morning sixth subdue darkness creeping gathered divide.</p>
+                            {/* <FontAwesomeIcon className="icon" icon={faTwitterSquare}/>
+                            <FontAwesomeIcon className="icon" icon={faFacebookSquare}/>
+                            <FontAwesomeIcon className="icon" icon={faYoutubeSquare}/> */}
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border border-success">
+                        <h2>Usefull Links</h2>
+                        <p><Link to="/home">Home</Link></p>
+                        <p><Link to="/about">About Us</Link></p>
+                        <p><Link to="/services">Services</Link></p>
+                        <p><Link to="/contact">Contact</Link></p>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border border-success">
+                        <h2>Address</h2>
+                        <p>200, D-block, Green lane USA</p>
+                        <p>+10 367 467 8934</p>
+                        <p>docmed@contact.com</p>
+                    </div>
+                </div>
+            </Container>
+        </div>
+    );
+};
+
+export default Footer;

@@ -17,8 +17,7 @@ const Welcome = () => {
                         <li> Apartments frequently or motionless.</li>
                         <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
                         <li> Voluptatem quia voluptas sit aspernatur.</li>
-
-                        <Button>Learn More</Button>
+                        <Button>Learn More</Button>                        
                     </div>
                 </div>
             </Container>

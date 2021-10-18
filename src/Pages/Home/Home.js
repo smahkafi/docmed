@@ -1,15 +1,16 @@
 import React from 'react';
+import Banner from './Banner/Banner';
 import Emergency from './Emergency/Emergency';
+import ServicesHome from './ServicesHome/ServicesHome';
 import Welcome from './Welcome/Welcome';
-// import Carousel from './Carousel/Carousel'
 
 const Home = () => {
     return (
         <div>
-            {/* <Carousel></Carousel> */}
-            {/* <Carousel></Carousel> */}
+            <Banner></Banner>
             <Emergency></Emergency>
             <Welcome></Welcome>
+            <ServicesHome></ServicesHome>
         </div>
     );
 };
