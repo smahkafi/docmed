@@ -4,7 +4,6 @@ import './ContactBanner.css'
 const ContactBanner = () => {
     return (
         <div className="contact">
-            
         </div>
     );
 };
