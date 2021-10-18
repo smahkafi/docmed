@@ -17,9 +17,9 @@ const ServicesHome = () => {
                     <h2>Our Departments</h2>
                     <p className="">Esteem spirit temper too say adieus who direct esteem.It esteems luckily or picture placing drawing.</p>
                 </div>
-                <div className="row d-flex">
+                <div className="row d-flex ">
                     {
-                        servicesHomes.map(service=> <ServiceHome service={service}></ServiceHome>)
+                        servicesHomes.map(service=> <ServiceHome key={service.id} service={service}></ServiceHome>)
                     }
                 </div>
             </Container>
