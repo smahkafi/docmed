@@ -7,7 +7,7 @@ import './GetTouch.css'
 const GetTouch = () => {
     return (
         <div>
-            <div className="row">
+            <div className="row mt-5">
                 <h2>Get in Touch</h2>
                 <div className="col-sm-12 col-md-8 col-lg-8 ">
                 <textarea class=" w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
@@ -20,29 +20,29 @@ const GetTouch = () => {
                 </div>
                 <div className="col-sm-12 col-md-4 col-lg-4 align-self-center text-start">
                     <div className="d-flex">
-                        <div className="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
                         <FontAwesomeIcon className="icon fs-3 text-danger" icon={faBuilding}/>
                         </div>
-                        <div className="col-sm-6 col-md-6 col-lg-6">
+                        <div className="col-sm-10 col-md-6 col-lg-10">
                         <h4>Buttonwood, California</h4>
                         <p>Rosemead, CA 91770</p>
                         </div>
                     </div> <hr />
                     <div className="d-flex">
-                        <div className="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
                         <FontAwesomeIcon className="icon fs-3 text-danger" icon={faTty}/>
                         </div>
-                        <div className="col-sm-6 col-md-6 col-lg-6">
+                        <div className="col-sm-10 col-md-6 col-lg-10">
                         <h4>+1 253 565 2365</h4>
                         <p>Mon to Fri 9am to 6pm</p>
                         </div>
                         
                     </div> <hr />
                     <div className="d-flex">
-                        <div className="col-sm-6 col-md-6 col-lg-6 align-self-center">
+                        <div className="col-sm-2 col-md-6 col-lg-6 align-self-center">
                             <FontAwesomeIcon className="icon fs-3 text-danger" icon={faEnvelope}/>
                         </div>
-                        <div className="col-sm-6 col-md-6 col-lg-6">
+                        <div className="col-sm-10 col-md-6 col-lg-10">
                             <h4>support@colorlib.com</h4>
                             <p>Send us your query anytime!</p>
                         </div>

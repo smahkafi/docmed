@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 import ServiceHome from '../ServiceHome/ServiceHome';
 
 const ServicesHome = () => {
-    const [servicesHomes, setServicesHomes] = useState([])
-
-    useEffect(()=> {
-        fetch('./docmed.json')
-        .then(res => res.json())
-        .then(data => setServicesHomes(data))
-    },[])
+    const {services} = useAuth()
+    
     return (
         <div className="bg-light mt-5">
             <Container>
@@ -19,7 +15,7 @@ const ServicesHome = () => {
                 </div>
                 <div className="row d-flex mt-5">
                     {
-                        servicesHomes.map(service=> <ServiceHome key={service.id} service={service}></ServiceHome>)
+                        services?.map(service=> <ServiceHome key={service.id} service={service}></ServiceHome>)
                     }
                 </div>
             </Container>
@@ -28,3 +24,7 @@ const ServicesHome = () => {
  };
 
 export default ServicesHome;
+
+
+
+// const [servicesHomes, setServicesHomes] = useState([])
