@@ -10,29 +10,25 @@ const Footer = () => {
         <div className="bg-secondary">
             <div className="container mt-5">
                 <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border">
+                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center">
                         <div>
                             <img src={`https://preview.colorlib.com/theme/docmed/img/xfooter_logo.png.pagespeed.ic.xG_fu5FTHW.webp`} alt="icon"/>
                             <p className="text-light">Firmament morning sixth subdue darkness creeping gathered divide.</p>
                         </div>
                         <div>
-                            <Link to="https://www.facebook.com">
-                                <FontAwesomeIcon className="icon" icon={faTwitterSquare}/></Link>
-                            <Link>
-                                <FontAwesomeIcon className="icon" icon={faFacebookSquare}/></Link>
-                            <Link>
-                                <FontAwesomeIcon className="icon" icon={faYoutubeSquare}/>
+                            <Link to="/home" className="ps-2">
+                                <FontAwesomeIcon className="icon fs-3 text-info" icon={faTwitterSquare}/></Link>
+                            <Link  to="/home" className="ps-2">
+                                <FontAwesomeIcon className="icon fs-3 text-primary" icon={faFacebookSquare}/></Link>
+                            <Link to="/home" className="ps-2">
+                                <FontAwesomeIcon className="icon fs-3 text-danger" icon={faYoutubeSquare}/>
                             </Link>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border">
-                        <h2>Usefull Links</h2>
-                        <p><Link to="/home" className="text-decoration-none text-white">Home</Link></p>
-                        <p><Link to="/about" className="text-decoration-none text-white">About Us</Link></p>
-                        <p><Link to="/services" className="text-decoration-none text-white">Services</Link></p>
-                        <p><Link to="/contact" className="text-decoration-none text-white">Contact</Link></p>
+                    <div className="col-sm-12 col-md-12 col-lg-4 align-self-end">
+                        <h6 className="text-light ">Copyright &copy; 2021 All rights reserved</h6>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center border">
+                    <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center text-light">
                         <h2>Address</h2>
                         <p>200, D-block, Green lane USA</p>
                         <p>+10 367 467 8934</p>
@@ -41,7 +37,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-light py-2">
-                <h6 className="text-warning">Copyright &copy; 2021 All rights reserved</h6>
+            </div>
+
+
+            <div>
+                
             </div>
         </div>
 

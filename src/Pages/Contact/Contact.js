@@ -9,7 +9,10 @@ const Contact = () => {
     return (
         <div id="contact" className="contact">
             <Container>
+                <div>
+                    
                 <ContactBanner></ContactBanner>
+                </div>
                 {/* <Map></Map> */}
                 <GetTouch></GetTouch>
             </Container>

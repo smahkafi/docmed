@@ -2,24 +2,27 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faKey } from '@fortawesome/free-solid-svg-icons';
-import useAuth from '../../../hooks/useAuth';
 import img from '../../../imges/login/login.jpg'
 import { useLocation, useHistory } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-    const { handleResetPassword, handlePasswordChange, handleLogin, signInUsingGoogle, user, handleEmailChange, error,  } = useAuth();
+    const { allContext} = useAuth()
+    const {handleResetPassword, handlePasswordChange, handleLogin, user, signInUsingGoogle, handleEmailChange, error } = allContext;
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
 
-    const handleGoogleSignIn = () => {
+    const handleGoogleSignIn = (e) => {
+        e.preventDefault()
         signInUsingGoogle()
             .then(result => {
+                console.log(result);
                 history.push(redirect_url)
             })
     }
-
     return (
+
         <div className="container my-5 pb-3">
             <div className="row">
 
@@ -33,8 +36,6 @@ const Login = () => {
                         <br /> <br />
                         <input className="input-field border-bottom border-0 w-50" type="text" name="last name" placeholder="Last name" />
                         <br /> <br />
-                        <input className="input-field border-bottom border-0 w-50" type="phone" name="phone" placeholder="Phone +880" />
-                        <br /> <br/>
 
                         <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
                         <br /> <br />
@@ -44,9 +45,9 @@ const Login = () => {
                             value="Login" />
                         <br /> <br />
 
-                        <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
+                        <h5>or</h5>
 
-                        <button onClick={handleResetPassword} type="submit" className="btn btn-primary"> <FontAwesomeIcon icon={faKey} /> Reset Password</button>
+                        <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
 
                     </div>
                 </div>

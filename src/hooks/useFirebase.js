@@ -11,20 +11,16 @@ const useFirebase = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
     
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-                setError("");
-            })
-            .catch(error => {
-                setError(error.message);
-            })
+        .finally(() => setIsLoading(false))
     };
+    
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -56,16 +52,7 @@ const useFirebase = () => {
             })
     }
 
-    const handleRegistration = (e) => {
-        e.preventDefault();
-        if (password.length < 8) {
-            console.log('Password must be at least 8 characters')
-            return;
-        }
-        if (!/(?=.*[A-Z].*[A-Z])/.test(password)) {
-            console.log("Password must contain 2 uppercase")
-            return;
-        }
+    
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user);
@@ -75,7 +62,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message)
             })
-    }
+    
 
     const verifyEmail = (email) => {
         sendEmailVerification(auth.email)
@@ -97,9 +84,11 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth)
             .then(() => { })
+            .finally(() => setIsLoading(false));
 
     }
     return{
+        isLoading,
         user,
         error,
         signInUsingGoogle,
@@ -107,9 +96,7 @@ const useFirebase = () => {
         handleEmailChange,
         handlePasswordChange,
         handleResetPassword,
-        handleRegistration,
         logOut
     }
 }
-
 export default useFirebase;

@@ -6,7 +6,9 @@ import useAuth from '../../../hooks/useAuth';
 import './Header.css'
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  const { allContext } = useAuth();
+  const {user, logOut} = allContext;
+  console.log(user)
     return (
         <>
             <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
