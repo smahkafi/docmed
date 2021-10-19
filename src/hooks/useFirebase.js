@@ -8,6 +8,7 @@ initializeAuthentication();
 const useFirebase = () => {
 
     const [user, setUser] = useState({});
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -32,6 +33,10 @@ const useFirebase = () => {
                 setError(error.message);
             })
     }
+
+    const getName = (e) => {
+        setName(e?.target?.value);
+    };
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -95,7 +100,8 @@ const useFirebase = () => {
         handlePasswordChange,
         handleResetPassword,
         logOut,
-        setUser
+        setUser,
+        getName
     }
 }
 export default useFirebase;

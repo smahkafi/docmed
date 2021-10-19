@@ -8,7 +8,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
     const { allContext} = useAuth()
-    const {handleResetPassword, setUser, handlePasswordChange, handleLogin, user, signInUsingGoogle, handleEmailChange, error } = allContext;
+    const {setUser, handlePasswordChange, handleLogin, signInUsingGoogle, handleEmailChange, error } = allContext;
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
@@ -32,28 +32,23 @@ const Login = () => {
                 <form onSubmit={handleLogin} className="text-center">
                     <p className="text-danger">{error}</p>
 
-                    <input className="input-field border-bottom border-0 w-50" type="text" name="first name" placeholder="First name" />
-                        <br /> <br />
-                    <input className="input-field border-bottom border-0 w-50" type="text" name="last name" placeholder="Last name" />
-                        <br /> <br />
+                    <input onBlur={handleEmailChange} className="input-field border-bottom border-0 w-50 " type="email" name="email" placeholder="Type Unique Your Email" required />
+                    <br /> <br />
+                    <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Type A New Password" required /><br/>
 
-                    <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
-                        <br /> <br />
                     <input className="mt-5 w-30 btn btn-danger m-auto" type="submit" value="Login" />
                         <br /> <br />
-
                         <h5>or</h5>
-
                         <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
 
-                    </form>
- </div>
+                </form>
+            </div>
 
-                <div className="col-md-6 col-sm-12">
-                    <div className="img">
-                        <img className="img-fluid w-75 rounded" src={img} alt="" />
-                    </div>
+            <div className="col-md-6 col-sm-12">
+                <div className="img">
+                    <img className="img-fluid w-75 rounded" src={img} alt="" />
                 </div>
+            </div>
 
             
             </div>

@@ -3,7 +3,7 @@ import useAuth from '../../../hooks/useAuth';
 import signup from '../../../imges/login/signup.jpg'
 
 const Registration = () => {
-    const { handleRegistration, handleEmailChange, handlePasswordChange } = useAuth();
+    const { handleRegistration, handleEmailChange, handlePasswordChange, getName } = useAuth();
     return (
         <div className="container my-5 pb-3">
             <div className="row ">
@@ -17,13 +17,14 @@ const Registration = () => {
 
                     <div onSubmit={handleRegistration} className="text-center"></div>
 
-                    <input onBlur={handleEmailChange} className="input-field border-bottom border-0 w-50 " type="email" name="email" placeholder="Type Your Email" required />
+                        <input onBlur={getName} className="input-field border-bottom border-0 w-50" type="text" name="first name" placeholder="First name" />
+                        <br /> <br />
+
+                        <input onBlur={handleEmailChange} className="input-field border-bottom border-0 w-50 " type="email" name="email" placeholder="Type Unique Your Email" required />
                         <br /> <br />
                         <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Type A New Password" required /><br/>
-                        <input
-                            className="mt-5 w-50 btn btn-primary m-auto mb-5"
-                            type="submit"
-                            value="Sign Up"/>
+
+                        <input className="mt-5 w-50 btn btn-primary m-auto mb-5" type="submit" value="Sign Up"/>
                 </div>
             </div>
         </div>
