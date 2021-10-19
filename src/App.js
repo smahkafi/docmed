@@ -27,9 +27,11 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/about">
+
+            <PrivateRoute path="/about">
               <About></About>
-            </Route>
+            </PrivateRoute>
+
             <Route path="/contact">
               <Contact></Contact>
             </Route>
@@ -42,7 +44,7 @@ function App() {
             <PrivateRoute path="/services/:servicesId">
               <Services></Services>
             </PrivateRoute>
-            <Route path="*">
+            <Route exact path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>

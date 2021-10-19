@@ -11,16 +11,16 @@ const Header = () => {
   console.log(user)
     return (
         <>
-            <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+            <Navbar bg="info" variant="dark" sticky="top" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">Docmed</Navbar.Brand>
 
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link as={HashLink} className="" to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} className="" to="/about">About Us</Nav.Link>
-                        <Nav.Link as={HashLink} className="" to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={HashLink} className="" to="/contact">Contact</Nav.Link>
+                        <Nav.Link as={HashLink} className="text-dark" to="/home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} className="text-dark" to="/about">About Us</Nav.Link>
+                        <Nav.Link as={HashLink} className="text-dark" to="/home#services">Services</Nav.Link>
+                        <Nav.Link as={HashLink} className="text-dark" to="/contact">Contact</Nav.Link>
 
                         {!user?.email ? (
                             <>

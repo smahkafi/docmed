@@ -12,20 +12,20 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center">
                         <div>
-                            <img src={`https://preview.colorlib.com/theme/docmed/img/xfooter_logo.png.pagespeed.ic.xG_fu5FTHW.webp`} alt="icon"/>
+                            <img src={`https://preview.colorlib.com/theme/docmed/img/xfooter_logo.png.pagespeed.ic.xG_fu5FTHW.webp`} alt="icon" />
                             <p className="text-light">Firmament morning sixth subdue darkness creeping gathered divide.</p>
                         </div>
                         <div>
                             <Link to="/home" className="ps-2">
-                                <FontAwesomeIcon className="icon fs-3 text-info" icon={faTwitterSquare}/></Link>
-                            <Link  to="/home" className="ps-2">
-                                <FontAwesomeIcon className="icon fs-3 text-primary" icon={faFacebookSquare}/></Link>
+                                <FontAwesomeIcon className="icon fs-3 text-info" icon={faTwitterSquare} /></Link>
                             <Link to="/home" className="ps-2">
-                                <FontAwesomeIcon className="icon fs-3 text-danger" icon={faYoutubeSquare}/>
+                                <FontAwesomeIcon className="icon fs-3 text-primary" icon={faFacebookSquare} /></Link>
+                            <Link to="/home" className="ps-2">
+                                <FontAwesomeIcon className="icon fs-3 text-danger" icon={faYoutubeSquare} />
                             </Link>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4 align-self-end">
+                    <div className="col-sm-12 col-md-12 col-lg-4 align-self-center">
                         <h6 className="text-light ">Copyright &copy; 2021 All rights reserved</h6>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 justify-content-center text-light">
@@ -36,12 +36,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-light py-2">
+            <div className="bg-light pt-2">
             </div>
 
 
             <div>
-                
+
             </div>
         </div>
 

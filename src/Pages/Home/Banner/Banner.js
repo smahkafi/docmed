@@ -14,8 +14,10 @@ const Banner = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3 className="text-dark">First slide label</h3>
-                    <p className="text-dark">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h1 className="text-dark">Health care</h1>
+                    <h4 className="text-dark">For Hole Family </h4>
+                    <p className="text-dark">In healthcare sector, service excellence is the facility of <br />
+                    the hospital as healthcare service provider to consistently.</p>
                     <Button>Check Our Service</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -26,8 +28,10 @@ const Banner = () => {
                     alt="Second slide"
                     />
                     <Carousel.Caption className="">
-                    <h3 className="text-dark">Second slide label</h3>
-                    <p className="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1 className="text-dark">Health care</h1>
+                    <h4 className="text-dark">For Hole Family </h4>
+                    <p className="text-dark">In healthcare sector, service excellence is the facility of <br />
+                    the hospital as healthcare service provider to consistently.</p>
                     <Button>Check Our Service</Button>
                     </Carousel.Caption>
                 </Carousel.Item>
