@@ -18,7 +18,6 @@ const useFirebase = () => {
 
     const signInUsingGoogle = () => {
         return signInWithPopup(auth, googleProvider)
-        .finally(() => setIsLoading(false))
     };
     
 
@@ -76,16 +75,15 @@ const useFirebase = () => {
             } else {
                 setUser({})
             }
-
+            setIsLoading(false)
         });
+        
         return () => unsubscribed;
     }, [])
 
     const logOut = () => {
         signOut(auth)
-            .then(() => { })
-            .finally(() => setIsLoading(false));
-
+         
     }
     return{
         isLoading,
@@ -96,7 +94,8 @@ const useFirebase = () => {
         handleEmailChange,
         handlePasswordChange,
         handleResetPassword,
-        logOut
+        logOut,
+        setUser
     }
 }
 export default useFirebase;

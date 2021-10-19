@@ -8,7 +8,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
     const { allContext} = useAuth()
-    const {handleResetPassword, handlePasswordChange, handleLogin, user, signInUsingGoogle, handleEmailChange, error } = allContext;
+    const {handleResetPassword, setUser, handlePasswordChange, handleLogin, user, signInUsingGoogle, handleEmailChange, error } = allContext;
     const location = useLocation();
     const history = useHistory();
     const redirect_url = location.state?.from || '/home';
@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault()
         signInUsingGoogle()
             .then(result => {
-                console.log(result);
+               setUser(result.user);
                 history.push(redirect_url)
             })
     }
@@ -29,28 +29,25 @@ const Login = () => {
             <div className="col-sm-12 col-md-6">
                 <h2 className="text-warning my-5 text-center">Sign In</h2>
                 
-                <div onSubmit={handleLogin} className="text-center">
+                <form onSubmit={handleLogin} className="text-center">
                     <p className="text-danger">{error}</p>
 
                     <input className="input-field border-bottom border-0 w-50" type="text" name="first name" placeholder="First name" />
                         <br /> <br />
-                        <input className="input-field border-bottom border-0 w-50" type="text" name="last name" placeholder="Last name" />
+                    <input className="input-field border-bottom border-0 w-50" type="text" name="last name" placeholder="Last name" />
                         <br /> <br />
 
-                        <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
+                    <input onBlur={handlePasswordChange} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
                         <br /> <br />
-                        <input
-                            className="mt-5 w-30 btn btn-danger m-auto"
-                            type="submit"
-                            value="Login" />
+                    <input className="mt-5 w-30 btn btn-danger m-auto" type="submit" value="Login" />
                         <br /> <br />
 
                         <h5>or</h5>
 
                         <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
 
-                    </div>
-                </div>
+                    </form>
+ </div>
 
                 <div className="col-md-6 col-sm-12">
                     <div className="img">

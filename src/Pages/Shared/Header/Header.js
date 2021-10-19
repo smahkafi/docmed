@@ -46,9 +46,7 @@ const Header = () => {
                                     </button>
                                 </div>
                             </NavDropdown>
-                        )}
-                        
-                            
+                        )}                            
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
