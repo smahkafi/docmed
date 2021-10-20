@@ -30,8 +30,8 @@ const Doctors = () => {
                         <img src={doctor3} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <h5 class="card-title">Lloyd Wilson</h5>
+                        <p class="card-text">Gynaecology - Oncology</p>
                     </div>
                 </div>
 
@@ -40,8 +40,8 @@ const Doctors = () => {
                         <img src={doctor4} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <h5 class="card-title">Rachel Parker</h5>
+                        <p class="card-text">Kidney Transplant - Adult</p>
                     </div>
                 </div>
                 
@@ -50,7 +50,7 @@ const Doctors = () => {
                         <img src={doctor5} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
+                        <h5 class="card-title">Ian Smith</h5>
                         <p class="card-text">Neurologist</p>
                     </div>
                 </div>
@@ -60,8 +60,8 @@ const Doctors = () => {
                         <img src={doctor6} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <h5 class="card-title">Lloyd Wilson</h5>
+                        <p class="card-text">Gastroenterology - Medical</p>
                     </div>
                 </div>
                 
@@ -70,8 +70,8 @@ const Doctors = () => {
                         <img src={doctor7} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <h5 class="card-title">Lloyd Wilson</h5>
+                        <p class="card-text">General Surgery</p>
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@ const Doctors = () => {
                     </div>
                     <div class="card-body doctors-contents">
                         <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <p class="card-text">Cardiac Surgery - Adult</p>
                     </div>
                 </div>
 
@@ -90,8 +90,8 @@ const Doctors = () => {
                         <img src={doctor1} class="card-img-top img-fluid" alt="..."/>
                     </div>
                     <div class="card-body doctors-contents">
-                        <h5 class="card-title">Mirazul Alom</h5>
-                        <p class="card-text">Neurologist</p>
+                        <h5 class="card-title">Alicia Henderson</h5>
+                        <p class="card-text">Orthopedics-Paediatric</p>
                     </div>
                 </div>
             </div>
