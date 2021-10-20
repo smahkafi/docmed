@@ -29,12 +29,3 @@ const ServicesHome = () => {
  };
 
 export default ServicesHome;
-
-
-
-// const [servicesHomes, setServicesHomes] = useState([])
-
-
-
-
-// const [servicesHomes, setServicesHomes] = useState([])

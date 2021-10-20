@@ -13,7 +13,6 @@ const Contact = () => {
                     
                 <ContactBanner></ContactBanner>
                 </div>
-                {/* <Map></Map> */}
                 <GetTouch></GetTouch>
             </Container>
         </div>

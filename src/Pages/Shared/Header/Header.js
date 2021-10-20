@@ -25,9 +25,17 @@ const Header = () => {
 
                         {!user?.email ? (
                             <>
-                                <Nav.Link as={NavLink} to="/signup" className="menu-items">Sign Up</Nav.Link>
+                                <Nav.Link as={NavLink} to="/signup" className="menu-items">
+                                    <div className="btn btn-primary">
+                                    Sign Up
+                                    </div>
+                                </Nav.Link>
 
-                                <Nav.Link as={NavLink} to="/login" className="menu-items">Sign In</Nav.Link>
+                                <Nav.Link as={NavLink} to="/login" className=" ms-2 menu-items">
+                                    <div className="btn btn-primary">
+                                        Sign In
+                                    </div>
+                                </Nav.Link>
                             </>
                         ): (
                             <NavDropdown
@@ -56,18 +64,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-
-// {user?.email ?
-//     <Nav.Link onClick={logOut} className="menu-items" >Log Out</Nav.Link>
-//     :
-//     <Nav.Link as={Link} to="/login" className="menu-items">Log In</Nav.Link>}
-    
-//     <Nav.Link as={Link} to="/registration" className="menu-items">Sign Up</Nav.Link>
-
-//     <Navbar.Text>
-//         <Nav.Link to="/login#login"> {user?.displayName} </Nav.Link>
-//     </Navbar.Text>

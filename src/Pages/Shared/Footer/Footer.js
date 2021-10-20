@@ -36,13 +36,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-light pt-2">
-            </div>
-
-
-            <div>
-
-            </div>
         </div>
 
 

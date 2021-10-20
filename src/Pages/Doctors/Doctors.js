@@ -12,7 +12,6 @@ import './Doctors.css'
 
 const Doctors = () => {
     return (
-
         <Container>
             <h2> Doctors List</h2>
             <div className="row">
@@ -66,7 +65,6 @@ const Doctors = () => {
                     </div>
                 </div>
                 
-                
                 <div className="col-sm-12 col-md-6 col-lg-4 border m-2 doctors p-0" style={{width: "18rem"}}>
                     <div class="card" className='mx-auto'>
                         <img src={doctor7} class="card-img-top img-fluid" alt="..."/>
@@ -96,8 +94,6 @@ const Doctors = () => {
                         <p class="card-text">Neurologist</p>
                     </div>
                 </div>
-                
-
             </div>
         </Container>
     );
