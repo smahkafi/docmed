@@ -6,7 +6,7 @@ import img from '../../../imges/About/aboutcontent.webp'
 const AboutContent = () => {
   return (
     <Container>
-      <div className="row d-flex">
+      <div className="mt-5 row d-flex">
         <div className="col-sm-12 col-md-6 col-md-6 align-self-center">
           <img className="img-fluid" src={img} alt="" />
         </div>
@@ -15,11 +15,7 @@ const AboutContent = () => {
           <p>Esteem spirit temper too say adieus who direct esteem. It esteems luckily picture placing drawing. Apartments frequently or motionless on reasonable projecting expression.</p>
         </div>
       </div>
-
-      
-
     </Container>
-
   );
 };
 

@@ -40,11 +40,11 @@ const Registration = () => {
                         </form>
                     </div>
 
-                        <div className="col-sm-12 col-md-6 col-lg-6">
-                            <div className="img">
-                                <img className="img-fluid w-75" src={signup} alt="" />
-                            </div>
+                    <div className="col-sm-12 col-md-6 col-lg-6">
+                        <div className="img">
+                            <img className="img-fluid w-75" src={signup} alt="" />
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
