@@ -65,13 +65,13 @@ const Login = () => {
                         <FontAwesomeIcon icon={faUnlock} />   <input onBlur={getPassword} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
                         <br /> <br />
                         <input
-                            className="mt-5 w-50 btn btn-success m-auto"
+                            className="mt-5 w-22 btn btn-danger align-self-start"
                             type="submit"
                             value="Sign In" />
                         <br /> <br />
 
-                        <p>-------or---------</p>
-                        <button onClick={handleGoogleSignIn} type="submit" className="btn btn-warning me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
+                        <p>Or---------</p>
+                        <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
 
                     </form>
                 </div>

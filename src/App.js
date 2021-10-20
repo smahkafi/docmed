@@ -12,6 +12,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Services from './Pages/Services/Services';
 import Login from './Pages/Login/Login/Login';
 import Registration from './Pages/Login/Register/Registration';
+import Doctors from './Pages/Doctors/Doctors';
 
 
 function App() {
@@ -31,6 +32,12 @@ function App() {
             <PrivateRoute path="/about">
               <About></About>
             </PrivateRoute>
+
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
+            </PrivateRoute>
+
+
 
             <Route path="/contact">
               <Contact></Contact>

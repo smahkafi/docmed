@@ -1,0 +1,9 @@
+.doctors:hover .doctors-contents{
+    background-color: aqua;
+    transition: 0.5s;
+}
+.doctors:hover img{
+    transform: scale(1.09);
+    transition: 1s;
+    border-radius: 20px;
+}
