@@ -40,8 +40,11 @@ const Login = () => {
                     <h2 className="text-success text-center">Sign In</h2>
 
                     <p className="text-center mb-5">
+                        Are you New?
                         <NavLink className="text-decoration-none text-success" to="/signup">
-                            Are you New? Please Sign Up!
+                             <div className="btn btn-warning ms-2 mt-2">
+                                Please Sign Up!
+                             </div>
                         </NavLink>
                     </p>
                     <p className="text-danger">{setError}</p>

@@ -28,17 +28,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-
-            <PrivateRoute path="/about">
+            <Route path="/about">
               <About></About>
-            </PrivateRoute>
-
+            </Route>
             <PrivateRoute path="/doctors">
               <Doctors></Doctors>
             </PrivateRoute>
-
-
-
             <Route path="/contact">
               <Contact></Contact>
             </Route>
@@ -63,10 +58,3 @@ function App() {
 }
 
 export default App;
-
-
-// <p className="mt-2">
-//         <NavLink className="text-decoration-none" to="/signup">
-//           Need an Account? Please Sign up!
-//         </NavLink>
-//       </p>

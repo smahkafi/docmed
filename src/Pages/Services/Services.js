@@ -13,7 +13,7 @@ const Services = () => {
     const itemMatched = services?.find(service => service?.id === Number(servicesId))
     console.log(itemMatched)
     return (
-            <div className="col-sm-12 col-md-6 col-lg-4 justify-content-center border border-success">
+            <div id="service" className="col-sm-12 col-md-6 col-lg-4 justify-content-center border border-success">
                 <div className="card mx-auto my-3" style={{width: "18rem"}}>
                     <img src={itemMatched?.image} className="card-img-top img-fluid rounded" alt="Doctor photo"/>
                 </div>

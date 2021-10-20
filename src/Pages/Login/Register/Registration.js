@@ -15,18 +15,16 @@ const Registration = () => {
     return (
         <div className="container my-5 pb-3">
             <div className="row ">
-                <div className="col-md-6 col-sm-12">
-                    <div className="img">
-                        <img className="img-fluid w-75" src={signup} alt="" />
-                    </div>
-                </div>
- 
-                <div className="col-sm-12 col-md-6">
-                    <h2 className="text-success text-center">Sign Up</h2>
+                
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                    <h2 className="text-primary text-center">Sign Up</h2>
  
                     <p className="text-center mb-5">
-                        <NavLink className="text-decoration-none text-success" to="/login">
-                            Have you an Account? Please Sign In!
+                    Have any account?
+                    <NavLink className="text-decoration-none text-success" to="/login">
+                             <div className="btn btn-info ms-2">
+                             Please Sign In!
+                             </div>
                         </NavLink>
                     </p>
  
@@ -40,12 +38,19 @@ const Registration = () => {
                         <FontAwesomeIcon icon={faLock} /> <input onBlur={getPassword} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
                         <br /> <br />
                         <input
-                            className="mt-5 w-50 btn btn-success m-auto"
+                            className="mt-5 w-30 btn btn-warning text-left"
                             type="submit"
                             value="Sign Up" />
  
                     </form>
                 </div>
+
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div className="img">
+                        <img className="img-fluid w-75" src={signup} alt="" />
+                    </div>
+                </div>
+ 
             </div>
         </div>
     );
