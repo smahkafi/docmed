@@ -6,7 +6,7 @@ import './GetTouch.css'
 
 const GetTouch = () => {
     return (
-        <div>
+        <div className="container">
             <div className="row mt-5">
                 <h2>Get in Touch</h2>
                 <div className="col-sm-12 col-md-8 col-lg-8 ">
