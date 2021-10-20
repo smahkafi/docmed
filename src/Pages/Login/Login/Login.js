@@ -1,6 +1,7 @@
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faUnlock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
@@ -61,17 +62,15 @@ const Login = () => {
                                 setError(error.message)
                             })
                     }} className="text-center">
-                        <FontAwesomeIcon icon={faEnvelope} />  <input onBlur={getEmail} className="input-field border-bottom border-0 w-50" type="email" name="email" placeholder="Email" required />
+                        <FontAwesomeIcon icon={faEnvelope} />  <input onBlur={getEmail} className="border-bottom border-0 w-50" type="email" name="email" placeholder="Email" required />
                         <br /> <br />
-                        <FontAwesomeIcon icon={faUnlock} />   <input onBlur={getPassword} className="input-field border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
-                        <br /> <br />
-                        <input
-                            className="mt-5 w-22 btn btn-danger align-self-start"
-                            type="submit"
-                            value="Sign In" />
-                        <br /> <br />
-                        <p>Or---------</p>
-                        <button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary me-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</button>
+                        <FontAwesomeIcon icon={faUnlock}/><input onBlur={getPassword} className="border-bottom border-0 w-50" type="password" name="password" placeholder="Password" required />
+                        <br />
+                        <div className="mt-5">
+                            <input className="m-2 w-25 btn btn-danger align-self-start" type="submit" value="Sign In" /> <span className="text-secondary"> || </span>
+                            <Button onClick={handleGoogleSignIn} type="submit" className="btn btn-primary  m-2"> <FontAwesomeIcon icon={faGoogle} /> Google Sign In</Button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
