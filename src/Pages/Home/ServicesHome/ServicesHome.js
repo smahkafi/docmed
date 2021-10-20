@@ -15,7 +15,7 @@ const ServicesHome = () => {
         <div className="bg-light mt-5">
             <Container>
                 <div className="mt-4 text-center">
-                    <h2>Our Departments</h2>
+                    <h2>Our Services</h2>
                     <p>Esteem spirit temper too say adieus who direct esteem. <br/> It esteems luckily or picture placing drawing.</p>
                 </div>
                 <div className="row d-flex mt-5">
