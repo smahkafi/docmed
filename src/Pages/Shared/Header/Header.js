@@ -24,7 +24,7 @@ const Header = () => {
 
                         {!user?.email ? (
                             <>
-                                <Nav.Link as={NavLink} to="/registration" className="menu-items">Sign Up</Nav.Link>
+                                <Nav.Link as={NavLink} to="/signup" className="menu-items">Sign Up</Nav.Link>
 
                                 <Nav.Link as={NavLink} to="/login" className="menu-items">Sign In</Nav.Link>
                             </>

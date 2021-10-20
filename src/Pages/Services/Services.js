@@ -10,7 +10,7 @@ const Services = () => {
         .then(res => res.json())
         .then(data => setServices(data))
     },[]) 
-    const itemMatched = services?.find(service => service?.id === servicesId)
+    const itemMatched = services?.find(service => service?.id === Number(servicesId))
     console.log(itemMatched)
     return (
             <div className="col-sm-12 col-md-6 col-lg-4 justify-content-center border border-success">

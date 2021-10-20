@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../../hooks/useAuth';
 import ServiceHome from '../ServiceHome/ServiceHome';
 
 const ServicesHome = () => {
-    const {services} = useAuth()
-    
+    // const {services, setServices} = useAuth()
+    const [services, setServices] = useState([])
+    useEffect ( () =>{
+        fetch("https://raw.githubusercontent.com/smahkafi/jsonfile/main/docmed.json")
+        .then(res => res.json())
+        .then(data => setServices(data))
+    },[]);
     return (
         <div className="bg-light mt-5">
             <Container>
@@ -24,6 +29,11 @@ const ServicesHome = () => {
  };
 
 export default ServicesHome;
+
+
+
+// const [servicesHomes, setServicesHomes] = useState([])
+
 
 
 

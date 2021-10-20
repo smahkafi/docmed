@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const ServicesDetail = () => {
-    const {servicesId} = useParams();
+    const {servicesId} = useParam();
     const {services} = useAuth();
     const previousData = services?.find(services=>services?.id===servicesId)
     return (
