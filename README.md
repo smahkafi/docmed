@@ -1,5 +1,3 @@
-## Make Master Online Course
-
 # An Healcare Related Website On [Firebase](https://docmed-50005.web.app).
 
 ## You can find services:
