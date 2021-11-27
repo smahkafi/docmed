@@ -4,7 +4,6 @@ import { Container } from 'react-bootstrap';
 import { faFacebookSquare, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
-
 const Footer = () => {
     return (
         <div className="bg-secondary">
